@@ -272,7 +272,7 @@ public class ExamPaperGui extends JPanel implements ActionListener {
 	 * @throws Exception
 	 */
 	public void processFile() throws Exception {
-		FileProcessor processor = new FileProcessor("filename");
+		FileProcessor processor = new FileProcessor("QuestionsAnswers.xlsx");
 		qEntity = processor.processFile();
 		questions = qEntity.getQuestions();
 		possibleAnswers = qEntity.getPossibleAnswers();
